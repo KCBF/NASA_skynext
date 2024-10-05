@@ -84,13 +84,6 @@ This comprehensive list provides an engaging overview of the celestial entities 
 
 Together, we’ve built this project to not only meet the challenge but to provide an intuitive and fun way for anyone to explore our cosmic neighborhood.
 
-## Contributing 🤝
-
-Want to help improve this project? Follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Submit a pull request with a detailed description of your contribution.
-
 ## License 📜
 
 This project is licensed under the MIT License. NASA data and APIs used are publicly available under their respective terms.
