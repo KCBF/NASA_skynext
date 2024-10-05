@@ -64,11 +64,25 @@ public class PlanetLabel : MonoBehaviour
         if (planet == null) return;
         
         Vector3 screenPosition = mainCamera.WorldToScreenPoint(planet.transform.position);
-        Transform labelTransform = uiCanvas.transform.Find(planet.name + "Label");
-        if (labelTransform != null)
+
+        // Ensure the label stays visible even if the planet is far away
+        if (screenPosition.z > 0) // Object is in front of the camera
         {
-            labelTransform.position = screenPosition;
-            labelTransform.rotation = Quaternion.identity; // Ensure label always faces the camera without rotating
+            Transform labelTransform = uiCanvas.transform.Find(planet.name + "Label");
+            if (labelTransform != null)
+            {
+                labelTransform.gameObject.SetActive(true);
+                labelTransform.position = screenPosition;
+                labelTransform.rotation = Quaternion.identity; // Ensure label always faces the camera without rotating
+            }
+        }
+        else
+        {
+            Transform labelTransform = uiCanvas.transform.Find(planet.name + "Label");
+            if (labelTransform != null)
+            {
+                labelTransform.gameObject.SetActive(false); // Hide label if the object is behind the camera
+            }
         }
     }
 }

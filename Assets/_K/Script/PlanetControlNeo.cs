@@ -180,13 +180,13 @@ public class PlanetControlNeo : MonoBehaviour
         // Increase time scale with the X key
         if (Input.GetKeyDown(KeyCode.X) && Time.timeScale < maxTimeScale)
         {
-            Time.timeScale += timeScaleIncrement;  // Increase the time scale
+            Time.timeScale = timeScaleIncrement + 1;  // Increase the time scale
         }
 
         // Decrease time scale with the Z key, but ensure it doesn't go below minTimeScale
         if (Input.GetKeyDown(KeyCode.Z) && Time.timeScale > minTimeScale)
         {
-            Time.timeScale -= timeScaleIncrement;  // Decrease the time scale
+            Time.timeScale = timeScaleIncrement -1;  // Decrease the time scale
         }
     }
 }
