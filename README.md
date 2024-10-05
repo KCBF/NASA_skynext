@@ -21,12 +21,19 @@ This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Ap
 
 In our orrery web app, we are managing a total of **45 celestial entities**, including:
 
-- **Planets and Moons**: 24
-- **Asteroids**: 9
-- **Comets**: 7
-- **Dwarf Planets**: 5
+### Planets and Moons 🌍 (Total: 13)
+**Mercury, Venus, Earth (Moon), Mars (Phobos, Deimos), Jupiter (Io, Europa, Ganymede, Callisto), Saturn (Titan, Rhea, Iapetus), Uranus, Neptune (Triton), Pluto, Ceres, Eris, Haumea, Makemake**
 
-This diverse set of entities allows us to create a rich and immersive experience for users exploring our solar system.
+### Asteroids 🪐 (Total: 5)
+**Vesta, 433 Eros, 99942 Apophis, 101955 Bennu, 25143 Itokawa**
+
+### Potentially Hazardous Asteroids (PHA) ⚠️ (Total: 4)
+**29075 (1950 DA), 3122 Florence, 4179 Toutatis, 1981 Midas**
+
+### Comets ☄️ (Total: 6)
+**67P/Churyumov-Gerasimenko, C/2011 L4 (PANSTARRS), 1P/Halley, 2P/Encke, C/2020 F3 (NEOWISE), C/1995 O1 (Hale-Bopp)**
+
+This comprehensive list provides an engaging overview of the celestial entities that our interactive orrery web app showcases, totaling **45** entities.
 
 ## Technologies Used 🔧
 
