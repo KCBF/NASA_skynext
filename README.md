@@ -40,7 +40,7 @@ This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Ap
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/KCBF/NASA_skynext.git
    ```
 2. **Open in Unity**:
    - Open the project through Unity Hub and launch it.
