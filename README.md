@@ -16,6 +16,18 @@ This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Ap
 - **Multiple Views**: Switch between first-person views of flying through the orrery and an exterior, wide-lens view of the system.
 - **NASA Data Integration**: Leverages NASA’s small-body and planetary data to ensure real-world accuracy of orbits and object positions.
 
+
+## Entities Handled 🌌
+
+In our orrery web app, we are managing a total of **45 celestial entities**, including:
+
+- **Planets and Moons**: 24
+- **Asteroids**: 9
+- **Comets**: 7
+- **Dwarf Planets**: 5
+
+This diverse set of entities allows us to create a rich and immersive experience for users exploring our solar system.
+
 ## Technologies Used 🔧
 
 - **Unity**: For rendering the orrery, 3D interactions, and orbit animations.
