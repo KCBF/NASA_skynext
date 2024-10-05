@@ -335,101 +335,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6927338795248942268, guid: 62a246a8b7f011f46ad886d24bb625cc, type: 3}
   m_PrefabInstance: {fileID: 585291252}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &103980241
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 103980243}
-  - component: {fileID: 103980242}
-  m_Layer: 0
-  m_Name: PlanetControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &103980242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103980241}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d11b527ca50ce9b4c84a5deb2b39066b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mercury:
-    planetTransform: {fileID: 95140696}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  venus:
-    planetTransform: {fileID: 266517196}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  earth:
-    planetTransform: {fileID: 746368463}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  mars:
-    planetTransform: {fileID: 1372585602}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  jupiter:
-    planetTransform: {fileID: 1952859072}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  saturn:
-    planetTransform: {fileID: 1021842094}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  uranus:
-    planetTransform: {fileID: 125654600}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  neptune:
-    planetTransform: {fileID: 942781308}
-    orbitDistance: 1500
-    orbitSpeed: 1
-    selfRotationSpeed: 15
-    tiltAngle: 23.5
-  sun: {fileID: 1200994834}
-  initialOrbitSpeed: 1
-  extendedOrbitDistance: 1000
---- !u!4 &103980243
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103980241}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1087.6799, y: 799.7634, z: -780.6212}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &125654600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8891740539130532134, guid: 3baa4483b341e624ebd3eae90d5a65c3, type: 3}
@@ -587,7 +492,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 257725666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d9927649543114793f55e77d29683b, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d3a4c73a67778409f6ae9babc1ecfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &257725668
@@ -918,10 +823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f38d0e49c21f84698c4445ffe90010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 510287547}
-  targetObject: {fileID: 746368463}
-  mainCamera: {fileID: 764328424}
-  textOffset: {x: 0, y: 2, z: 0}
 --- !u!4 &403257048
 Transform:
   m_ObjectHideFlags: 0
@@ -2812,13 +2713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b287d0798a3756489c8632aeba26c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sun: {fileID: 1050751077}
-  selfRotationSpeed: 0.017064847
-  tiltAngle: 0.034
-  orbitSpeed: 47.87
-  orbitInclination: 7
-  semiMajorAxis: 4218.3
-  semiMinorAxis: 4131.1
 --- !u!1001 &1107788562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3495,7 +3389,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1343579317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d0deff2163a364390edbbebe63374e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a4195fa404fdee4aaa340905ef0f5de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mercury:
@@ -3503,7 +3397,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   venus:
@@ -3511,7 +3405,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   earth:
@@ -3519,7 +3413,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   moon:
@@ -3527,7 +3421,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   mars:
@@ -3535,7 +3429,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   phobos:
@@ -3559,7 +3453,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   io:
@@ -3599,7 +3493,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   titan:
@@ -3647,7 +3541,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   miranda:
@@ -3679,7 +3573,7 @@ MonoBehaviour:
     orbitSpeed: 1
     selfRotationSpeed: 15
     tiltAngle: 23.5
-    planetScale: 100
+    planetScale: 0
     orbitRadius: 0
     orbitRingPrefab: {fileID: 0}
   triton:
@@ -3726,7 +3620,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574350827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c3ecc64719fcf42b28b0e4915c50bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 25a9365c529a59d429c80ae95677b86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whiteSkyboxMaterial: {fileID: 2100000, guid: 2b06714d6741efb4b963955aadd76ad9, type: 2}
@@ -4914,7 +4808,6 @@ SceneRoots:
   - {fileID: 372010929}
   - {fileID: 1922565712}
   - {fileID: 1200994834}
-  - {fileID: 103980243}
   - {fileID: 1574350829}
   - {fileID: 257725668}
   - {fileID: 1659362014}
