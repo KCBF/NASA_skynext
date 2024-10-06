@@ -884,8 +884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 510.0154, y: -258}
-  m_SizeDelta: {x: 239.4578, y: 42.1801}
+  m_AnchoredPosition: {x: 314.87, y: -258}
+  m_SizeDelta: {x: 629.74, y: 42.1801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450878534
 MonoBehaviour:
@@ -1213,7 +1213,10 @@ MonoBehaviour:
   m_text: "433 Eros: Eros is a long, rocky body, tumbling through space like a forgotten
     stone. He gets very close to Earth sometimes\u2014so close that we\u2019ve even
     visited him! He\u2019s shaped like a potato and is full of craters, reminders
-    of the bumps and collisions he's had.\r\n"
+    of the bumps and collisions he's had.\n\n\n\n--- Keplerian parameters ---\n\nSemi-major
+    axis (a): 1.458 AU\r\nEccentricity (e): 0.223\r\nInclination (i): 10.83\xB0\r\nLongitude
+    of ascending node (\u03A9): 304.4\xB0\r\nArgument of periapsis (\u03C9): 178.9\xB0\r\nMean
+    anomaly (M): 73.3\xB0\r\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1240,8 +1243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2881,7 +2884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Download CSV
+  m_text: Download KEPLERIAN PARAMETERS IN .CSV
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -3099,8 +3102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -442.84, y: -70.57823}
-  m_SizeDelta: {x: 371.74, y: 496.4996}
+  m_AnchoredPosition: {x: -442.84, y: -22.8986}
+  m_SizeDelta: {x: 371.74, y: 591.8588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754031010
 MonoBehaviour:

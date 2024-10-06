@@ -220,9 +220,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ah, Earth! Human''s beloved home, full of life and color. She spins gracefully,
-    not too fast, not too slow. And she has a loyal friend, the Moon, who always
-    follows her closely. '
+  m_text: "Neptune is far, far away, almost lost at the edge of everything. He\u2019s
+    a deep, mysterious blue, and he carries fierce winds that rush faster than anything\u2014his
+    storms swirl like dark secrets. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1171,8 +1171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -453, y: -92.64399}
-  m_SizeDelta: {x: 351.4315, y: 452.3659}
+  m_AnchoredPosition: {x: -453, y: -42.5114}
+  m_SizeDelta: {x: 351.4315, y: 552.6312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194020073
 MonoBehaviour:
