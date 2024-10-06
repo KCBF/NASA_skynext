@@ -1,4 +1,7 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class PlanetControlNeo : MonoBehaviour
 {
@@ -10,8 +13,9 @@ public class PlanetControlNeo : MonoBehaviour
         public float selfRotationSpeed = 15f; // Speed of the planet's self-rotation
         public float tiltAngle = 23.5f;       // Axial tilt angle of the planet
         public float planetScale;             // Scale of the planet based on NASA data
-        public float orbitRadius;             // Distance from the sun (scaled appropriately)
-        public GameObject orbitRingPrefab;    // Orbit ring prefab for visual orbit path
+        public float orbitRadius;             // Average distance from the sun (scaled appropriately)
+        public float eccentricity = 0f;       // Eccentricity of the orbit, for elliptical orbits
+        public Color orbitRingColor = Color.white; // Color of the orbit ring
     }
 
     // Planets
@@ -25,18 +29,16 @@ public class PlanetControlNeo : MonoBehaviour
     public Planet neptune;
 
     public Transform sun; // Drag the Sun object here
+    public Button toggleOrbitVisibilityButton; // Drag and drop the TextMeshPro button here
 
     // Global offset for orbit distance
     public float globalOrbitOffset = 0f;  // Adjustable in the inspector to push planets further from the sun
 
-    // Time scale adjustment for the whole scene
-
-    // Orbit ring appearance control
-    public Color orbitRingColor = Color.white;
-    public float orbitRingThickness = 0.05f;
-
     // Sun scaling factor (10900 for the Sun)
     private const float sunScaleFactor = 10900f;
+
+    private bool orbitsVisible = true;
+    private List<GameObject> orbitRings = new List<GameObject>();
 
     void Start()
     {
@@ -55,11 +57,16 @@ public class PlanetControlNeo : MonoBehaviour
         SetInitialPositionsAndDrawOrbits(saturn, 915.02f, 26.73f);
         SetInitialPositionsAndDrawOrbits(uranus, 397.19f, 97.77f);
         SetInitialPositionsAndDrawOrbits(neptune, 394.62f, 28.32f);
+
+        // Set up button listener for toggling orbit visibility
+        if (toggleOrbitVisibilityButton != null)
+        {
+            toggleOrbitVisibilityButton.onClick.AddListener(ToggleOrbitVisibility);
+        }
     }
 
     void Update()
     {
-
         // Update orbit and self-rotation for all planets
         UpdatePlanetOrbitAndRotation(mercury);
         UpdatePlanetOrbitAndRotation(venus);
@@ -128,7 +135,8 @@ public class PlanetControlNeo : MonoBehaviour
     void SetInitialPositionsAndDrawOrbits(Planet planet, float scale, float tilt)
     {
         // Set the initial position for the planet based on its orbit radius
-        planet.planetTransform.position = new Vector3(planet.orbitRadius + (sun.localScale.x / 2), 0, 0);
+        float orbitRadiusWithOffset = planet.orbitRadius + globalOrbitOffset;
+        planet.planetTransform.position = new Vector3(orbitRadiusWithOffset, 0, 0);
 
         // Set axial tilt
         planet.planetTransform.rotation = Quaternion.Euler(tilt, 0, 0);
@@ -142,19 +150,40 @@ public class PlanetControlNeo : MonoBehaviour
 
     void DrawOrbitRing(Planet planet)
     {
-        // Instantiate the orbit ring as a prefab
-        if (planet.orbitRingPrefab != null)
-        {
-            GameObject orbitRing = Instantiate(planet.orbitRingPrefab, sun.position, Quaternion.identity);
-            orbitRing.transform.localScale = new Vector3(planet.orbitRadius * 2, orbitRingThickness, planet.orbitRadius * 2);
+        // Create an empty GameObject for the orbit ring
+        GameObject orbitRing = new GameObject(planet.planetTransform.name + "_OrbitRing");
+        orbitRing.transform.position = sun.position;
 
-            // Adjust the color and thickness of the orbit ring
-            Renderer ringRenderer = orbitRing.GetComponent<Renderer>();
-            if (ringRenderer != null)
-            {
-                ringRenderer.material.color = orbitRingColor;
-            }
+        // Add LineRenderer component
+        LineRenderer lineRenderer = orbitRing.AddComponent<LineRenderer>();
+        lineRenderer.useWorldSpace = true;
+        lineRenderer.loop = true;
+        lineRenderer.positionCount = 100;
+        lineRenderer.startWidth = 50f;
+        lineRenderer.endWidth = 50f;
+        lineRenderer.material = new Material(Shader.Find("Unlit/Color")) { color = planet.orbitRingColor };
+        lineRenderer.startColor = planet.orbitRingColor;
+        lineRenderer.endColor = planet.orbitRingColor;
+
+        // Draw the orbit ring considering eccentricity for elliptical orbits
+        float angle = 0f;
+        Vector3[] positions = new Vector3[100];
+        float semiMajorAxis = planet.orbitRadius + globalOrbitOffset;
+        float semiMinorAxis = semiMajorAxis * (1f - planet.eccentricity);
+
+        for (int i = 0; i < 100; i++)
+        {
+            float x = Mathf.Sin(Mathf.Deg2Rad * angle) * semiMajorAxis;
+            float z = Mathf.Cos(Mathf.Deg2Rad * angle) * semiMinorAxis;
+
+            positions[i] = new Vector3(x, 0, z);
+            angle += 360f / 100;
         }
+
+        lineRenderer.SetPositions(positions);
+
+        // Add the orbit ring to the list for toggling visibility later
+        orbitRings.Add(orbitRing);
     }
 
     void UpdatePlanetOrbitAndRotation(Planet planet)
@@ -170,5 +199,14 @@ public class PlanetControlNeo : MonoBehaviour
         planet.planetTransform.Rotate(Vector3.up, rotationSpeedPerFrame);
     }
 
-    
+    void ToggleOrbitVisibility()
+    {
+        orbitsVisible = !orbitsVisible;
+
+        // Toggle visibility of all orbit rings
+        foreach (GameObject orbitRing in orbitRings)
+        {
+            orbitRing.SetActive(orbitsVisible);
+        }
+    }
 }
