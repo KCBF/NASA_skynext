@@ -32,10 +32,10 @@ public class PlanetControlNeo : MonoBehaviour
     public Button toggleOrbitVisibilityButton; // Drag and drop the TextMeshPro button here
 
     // Global offset for orbit distance
-    public float globalOrbitOffset = 0f;  // Adjustable in the inspector to push planets further from the sun
+    public float globalOrbitOffset = 400f;  // Adjustable in the inspector to push planets further from the sun
 
-    // Sun scaling factor (10900 for the Sun)
-    private const float sunScaleFactor = 10900f;
+    // Sun scaling factor (adjusted to 1090 for the Sun)
+    private const float sunScaleFactor = 1090f;
 
     private bool orbitsVisible = true;
     private List<GameObject> orbitRings = new List<GameObject>();
@@ -49,14 +49,14 @@ public class PlanetControlNeo : MonoBehaviour
         InitializePlanets();
 
         // Set initial positions, rotations, and draw orbit rings for planets
-        SetInitialPositionsAndDrawOrbits(mercury, 38.31f, 0.034f);
-        SetInitialPositionsAndDrawOrbits(venus, 95.23f, 177.4f);
-        SetInitialPositionsAndDrawOrbits(earth, 100f, 23.5f);
-        SetInitialPositionsAndDrawOrbits(mars, 53.18f, 25.19f);
-        SetInitialPositionsAndDrawOrbits(jupiter, 1091.07f, 3.13f);
-        SetInitialPositionsAndDrawOrbits(saturn, 915.02f, 26.73f);
-        SetInitialPositionsAndDrawOrbits(uranus, 397.19f, 97.77f);
-        SetInitialPositionsAndDrawOrbits(neptune, 394.62f, 28.32f);
+        SetInitialPositionsAndDrawOrbits(mercury, 3.83f, 0.034f);
+        SetInitialPositionsAndDrawOrbits(venus, 9.52f, 177.4f);
+        SetInitialPositionsAndDrawOrbits(earth, 10f, 23.5f);
+        SetInitialPositionsAndDrawOrbits(mars, 5.32f, 25.19f);
+        SetInitialPositionsAndDrawOrbits(jupiter, 109.11f, 3.13f);
+        SetInitialPositionsAndDrawOrbits(saturn, 91.5f, 26.73f);
+        SetInitialPositionsAndDrawOrbits(uranus, 39.72f, 97.77f);
+        SetInitialPositionsAndDrawOrbits(neptune, 39.46f, 28.32f);
 
         // Set up button listener for toggling orbit visibility
         if (toggleOrbitVisibilityButton != null)
@@ -80,15 +80,15 @@ public class PlanetControlNeo : MonoBehaviour
 
     void InitializePlanets()
     {
-        // Sizes based on NASA data, relative to Earth (which is set to 100 units)
-        mercury.planetScale = 38.31f;
-        venus.planetScale = 95.23f;
-        earth.planetScale = 100f;
-        mars.planetScale = 53.18f;
-        jupiter.planetScale = 1091.07f;
-        saturn.planetScale = 915.02f;
-        uranus.planetScale = 397.19f;
-        neptune.planetScale = 394.62f;
+        // Sizes based on NASA data, relative to Earth (which is set to 10 units)
+        mercury.planetScale = 3.83f;
+        venus.planetScale = 9.52f;
+        earth.planetScale = 10f;
+        mars.planetScale = 5.32f;
+        jupiter.planetScale = 109.11f;
+        saturn.planetScale = 91.5f;
+        uranus.planetScale = 39.72f;
+        neptune.planetScale = 39.46f;
 
         // Orbit radii based on NASA distances from the Sun (AU) scaled to Unity units, plus the global offset
         mercury.orbitRadius = (0.387f * sunScaleFactor) + globalOrbitOffset;
@@ -159,8 +159,8 @@ public class PlanetControlNeo : MonoBehaviour
         lineRenderer.useWorldSpace = true;
         lineRenderer.loop = true;
         lineRenderer.positionCount = 100;
-        lineRenderer.startWidth = 50f;
-        lineRenderer.endWidth = 50f;
+        lineRenderer.startWidth = 5f;
+        lineRenderer.endWidth = 5f;
         lineRenderer.material = new Material(Shader.Find("Unlit/Color")) { color = planet.orbitRingColor };
         lineRenderer.startColor = planet.orbitRingColor;
         lineRenderer.endColor = planet.orbitRingColor;
