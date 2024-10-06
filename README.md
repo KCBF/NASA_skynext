@@ -18,9 +18,8 @@ This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Ap
   ![Spaceship](./readme/SpaceShip.jpg)
 - **Storytelling**  
   ![Earth Storytelling](./readme/Earth_Storytelling.jpg)
-
-  - **CSV Feature for NEAs**  
-    ![CSV Feature for NEAs](./readme/CSV_Feature.jpg)
+- **CSV Feature for NEAs**  
+   ![CSV Feature for NEAs](./readme/CSV_Feature.jpg)
 
 - **Interactive 3D Orrery**: A visually stunning, interactive model of the solar system showcasing the orbits of planets, asteroids, and comets.
 - **NEO Visualization**: Real-time or pre-set data for Near-Earth Objects like NEAs, NECs, and PHAs, using NASA’s public datasets.
