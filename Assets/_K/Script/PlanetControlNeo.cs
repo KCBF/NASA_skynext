@@ -30,9 +30,6 @@ public class PlanetControlNeo : MonoBehaviour
     public float globalOrbitOffset = 0f;  // Adjustable in the inspector to push planets further from the sun
 
     // Time scale adjustment for the whole scene
-    public float timeScaleIncrement = 0.1f;
-    public float minTimeScale = 0.1f;     // Lower limit for time scale
-    public float maxTimeScale = 10f;      // Upper limit for time scale
 
     // Orbit ring appearance control
     public Color orbitRingColor = Color.white;
@@ -62,8 +59,6 @@ public class PlanetControlNeo : MonoBehaviour
 
     void Update()
     {
-        // Handle time scale changes with X and Z keys
-        HandleTimeScaleChange();
 
         // Update orbit and self-rotation for all planets
         UpdatePlanetOrbitAndRotation(mercury);
@@ -175,18 +170,5 @@ public class PlanetControlNeo : MonoBehaviour
         planet.planetTransform.Rotate(Vector3.up, rotationSpeedPerFrame);
     }
 
-    void HandleTimeScaleChange()
-    {
-        // Increase time scale with the X key
-        if (Input.GetKeyDown(KeyCode.X) && Time.timeScale < maxTimeScale)
-        {
-            Time.timeScale = timeScaleIncrement + 1;  // Increase the time scale
-        }
-
-        // Decrease time scale with the Z key, but ensure it doesn't go below minTimeScale
-        if (Input.GetKeyDown(KeyCode.Z) && Time.timeScale > minTimeScale)
-        {
-            Time.timeScale = timeScaleIncrement -1;  // Decrease the time scale
-        }
-    }
+    
 }
