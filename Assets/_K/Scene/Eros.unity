@@ -1210,10 +1210,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "433 Eros: Eros is a long, rocky body, tumbling through space like a forgotten
-    stone. He gets very close to Earth sometimes\u2014so close that we\u2019ve even
-    visited him! He\u2019s shaped like a potato and is full of craters, reminders
-    of the bumps and collisions he's had.\n\n\n\n--- Keplerian parameters ---\n\nSemi-major
+  m_text: "Eros is a long, rocky body, tumbling through space like a forgotten stone.
+    He gets very close to Earth sometimes\u2014so close that we\u2019ve even visited
+    him! He\u2019s shaped like a potato and is full of craters, reminders of the
+    bumps and collisions he's had.\n\n\n\n--- Keplerian parameters ---\n\nSemi-major
     axis (a): 1.458 AU\r\nEccentricity (e): 0.223\r\nInclination (i): 10.83\xB0\r\nLongitude
     of ascending node (\u03A9): 304.4\xB0\r\nArgument of periapsis (\u03C9): 178.9\xB0\r\nMean
     anomaly (M): 73.3\xB0\r\r\n"
