@@ -22,6 +22,30 @@ MonoBehaviour:
     m_path: Assets/_K/Scene/002_SpiralGalaxy.unity
   - m_enabled: 1
     m_path: Assets/_K/Scene/001_SolarSystem.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/004_Mars.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Eros.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Jupiter1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Mars1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Mercury1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Moon1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Neptune1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Saturn1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Sun1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Uranus1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Venus1.unity
+  - m_enabled: 1
+    m_path: Assets/_K/Scene/Earth1.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []
