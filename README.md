@@ -2,7 +2,7 @@
 
 - **Our App: [www.effoma.com/nasa](www.effoma.com/nasa)**
 - **Our Video Demo: [https://youtu.be/4CBwFxsVA9A](https://youtu.be/4CBwFxsVA9A)**
-- **Our Slides: [https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing](https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing)**
+- **Our Slides: [https://drive.google.com/file/d/1glgYGWjSb8AezrL5UlUtHxVrUKVcjKi2/view?usp=sharing](https://drive.google.com/file/d/1glgYGWjSb8AezrL5UlUtHxVrUKVcjKi2/view?usp=sharing)**
 
 ## Project Overview
 
