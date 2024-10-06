@@ -1,5 +1,9 @@
 # Space Apps Challenge: Create an Orrery Web App 🌌🚀
 
+**Try Our App!!: [www.effoma.com/nasa](www.effoma.com/nasa)**
+**Our Video Demo!!: [https://youtu.be/Vqn5pBnQ57g](https://youtu.be/Vqn5pBnQ57g)**
+**Our Slides!!: [https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing](https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing)**
+
 ## Project Overview
 
 This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Apps Challenge**. Our mission was to create an interactive orrery web application that visually represents celestial bodies. The goal is to offer an engaging and educational tool that helps users explore the solar system and learn more about the fascinating objects around us.
@@ -15,7 +19,6 @@ This project, developed by **Team SkyNext**, is part of the **2024 NASA Space Ap
   - Speed and time control for simulating orbits in motion (dynamic orrery).
 - **Multiple Views**: Switch between first-person views of flying through the orrery and an exterior, wide-lens view of the system.
 - **NASA Data Integration**: Leverages NASA’s data to ensure real-world accuracy of orbits and object positions.
-
 
 ## Entities Handled 🌌
 
