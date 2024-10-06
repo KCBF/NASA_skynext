@@ -37,7 +37,7 @@ In our orrery web app, we are managing a total of **10 celestial entities**, inc
 
 **433 Eros**
 
-This comprehensive list provides an engaging overview of the celestial entities that our interactive orrery web app showcases, totaling **45** entities.
+This comprehensive list provides an engaging overview of the celestial entities that our interactive orrery web app showcases, totaling **10** entities.
 
 ## Technologies Used 🔧
 
