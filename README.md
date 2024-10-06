@@ -1,8 +1,8 @@
 # Space Apps Challenge: Create an Orrery Web App 🌌🚀
 
-- **Try Our App!!: [www.effoma.com/nasa](www.effoma.com/nasa)**
-- **Our Video Demo!!: [https://youtu.be/Vqn5pBnQ57g](https://youtu.be/Vqn5pBnQ57g)**
-- **Our Slides!!: [https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing](https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing)**
+- **Our App: [www.effoma.com/nasa](www.effoma.com/nasa)**
+- **Our Video Demo: [https://youtu.be/Vqn5pBnQ57g](https://youtu.be/Vqn5pBnQ57g)**
+- **Our Slides: [https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing](https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing)**
 
 ## Project Overview
 
