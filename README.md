@@ -66,7 +66,10 @@ This comprehensive list provides an engaging overview of the celestial entities 
 
 ### Team Members:
 
-- **Kody, Seokyung, Thanh, Thuong**
+- **Kody Anh Nguyen**
+- **Seokyung Kim**
+- **Thanh Huu Nguyen**
+- **Mai Thuong Bui**
 
 Together, we’ve built this project to not only meet the challenge but to provide an intuitive and fun way for anyone to explore our cosmic neighborhood.
 
