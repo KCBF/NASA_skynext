@@ -1,8 +1,8 @@
 # Space Apps Challenge: Create an Orrery Web App 🌌🚀
 
 - **Our App: [www.effoma.com/nasa](www.effoma.com/nasa)**
-- **Our Video Demo: [https://youtu.be/Vqn5pBnQ57g](https://youtu.be/Vqn5pBnQ57g)**
-- **Our Slides: [https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing](https://drive.google.com/file/d/1gKrMhTSZ39-aVSIV2pnFBgl9sfdFJELs/view?usp=sharing)**
+- **Our Video Demo: [https://youtu.be/4CBwFxsVA9A](https://youtu.be/4CBwFxsVA9A)**
+- **Our Slides: [https://drive.google.com/file/d/1glgYGWjSb8AezrL5UlUtHxVrUKVcjKi2/view?usp=sharing](https://drive.google.com/file/d/1glgYGWjSb8AezrL5UlUtHxVrUKVcjKi2/view?usp=sharing)**
 
 ## Project Overview
 
@@ -66,7 +66,10 @@ This comprehensive list provides an engaging overview of the celestial entities 
 
 ### Team Members:
 
-- **Kody, Seokyung, Thanh, Thuong**
+- **Kody Anh Nguyen**
+- **Seokyung Kim**
+- **Thanh Huu Nguyen**
+- **Mai Thuong Bui**
 
 Together, we’ve built this project to not only meet the challenge but to provide an intuitive and fun way for anyone to explore our cosmic neighborhood.
 
