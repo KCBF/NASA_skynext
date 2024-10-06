@@ -15,6 +15,7 @@ public class SolarSystemManager : MonoBehaviour
     public Button saturnButton;
     public Button uranusButton;
     public Button neptuneButton;
+    public Button erosButton;
     public TMP_Text progressText;  // Assign TextMeshPro Text to display progress
     public Button resetButton;     // Assign Reset Experience button in inspector
 
@@ -27,9 +28,10 @@ public class SolarSystemManager : MonoBehaviour
     public string saturnSceneName;
     public string uranusSceneName;
     public string neptuneSceneName;
+    public string erosSceneName;
 
-    private bool[] celestialBodiesVisited = new bool[9];
-    private int totalCelestialBodies = 9;
+    private bool[] celestialBodiesVisited = new bool[10];
+    private int totalCelestialBodies = 10;
     private int celestialBodiesVisitedCount = 0;
 
     void Start()
@@ -51,6 +53,7 @@ public class SolarSystemManager : MonoBehaviour
         saturnButton.onClick.AddListener(() => OnCelestialButtonClick(6, saturnSceneName));
         uranusButton.onClick.AddListener(() => OnCelestialButtonClick(7, uranusSceneName));
         neptuneButton.onClick.AddListener(() => OnCelestialButtonClick(8, neptuneSceneName));
+        erosButton.onClick.AddListener(() => OnCelestialButtonClick(9, erosSceneName));
     }
 
     void OnCelestialButtonClick(int index, string sceneName)
@@ -79,6 +82,7 @@ public class SolarSystemManager : MonoBehaviour
             case 6: return saturnButton;
             case 7: return uranusButton;
             case 8: return neptuneButton;
+            case 9: return erosButton;
             default: return null;
         }
     }
