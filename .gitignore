@@ -73,3 +73,4 @@ crashlytics-build.properties
 
 # Ignore the entire Plugins folder inside Assets
 Assets/Plugins/
+Assets/Fullscreen/
